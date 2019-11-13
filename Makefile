@@ -91,6 +91,12 @@ db%import:
                 fi; \
         fi;
 
+drupal%rebuild:
+	@php sites/all/modules/registry_rebuild/registry_rebuild.php
+
+drupal%clean:
+	@drush cc clean
+
 npm%build:
         @npm install
 
