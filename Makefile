@@ -94,6 +94,12 @@ db%import:
 npm%build:
         @npm install
 
+composer%install:
+	@composer install
+
+composer%update:
+	@composer update
+
 clean: php%kill down
         docker system prune -f
         docker volume prune -f
@@ -104,6 +110,7 @@ doctor:
         @echo -n "PHP: " && type php >/dev/null 2>&1 && echo "[OK]" || (echo "[Not found]";)
         @echo -n "PHPUnit: " && type phpunit >/dev/null 2>&1 && echo "[OK]" || (echo "[Not found]";)
         @echo -n "NPM: " && type npm >/dev/null 2>&1 && echo "[OK]" || (echo "[Not found]";)
+        @echo -n "Composer: " && type composer >/dev/null 2>&1 && echo "[OK]" || (echo "[Not found]";)
 
 make%debug:
         @echo "Application binary name: $(APP_BINARY_NAME)"
