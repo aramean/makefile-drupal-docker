@@ -5,8 +5,6 @@ Testet with:
 * [ ] Drupal 8.x
 * [ ] Drupal 9.x
 
-> For Frequently Asked Questions, please [click here](#faq).
-
 ## Available commands
 
 #### ⬇ Docker
