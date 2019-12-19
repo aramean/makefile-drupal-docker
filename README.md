@@ -33,8 +33,6 @@ $ make destroy
 <br>
 
 #### ⬇ CLI Web Server
-___
-Run the environment with CLI. This may not handle all configurations and could require manual actions.
 
 ##### Run
 Start application:
